@@ -3,13 +3,12 @@
 
 #define CURRENT_READ 34
 
-ACS712  ACS(CURRENT_READ, 3.3, 4095, 10);
+ACS712  ACS(CURRENT_READ, 3.3, 4095, 100);
 
 
 void setup() {
   Serial.begin(9600);
   ACS.autoMidPoint();
-
 }
 
 void loop() {
